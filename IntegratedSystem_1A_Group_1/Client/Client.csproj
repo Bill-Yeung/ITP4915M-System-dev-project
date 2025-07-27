@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Components\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Components\frmDevelopment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Login\frmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Login\frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RnD\PSS\frmApproveProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RnD\PSS\frmCreateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\SnM\OMS\frmQuotationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\SupplyChain\frmSupplyMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\CS\" />
+    <Folder Include="Views\Finance\" />
+    <Folder Include="Views\IT\" />
+    <Folder Include="Views\Production\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.55" />
+    <PackageReference Include="Svg" Version="3.4.7" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityModels\EntityModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Content Include="Assets\*.*">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+
+</Project>
