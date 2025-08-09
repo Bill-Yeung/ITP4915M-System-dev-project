@@ -1,14 +1,12 @@
-===========================================================
-TOYS COMPANY INTERNAL SYSTEM - INSTALLATION GUIDE
-===========================================================
+# TOYS COMPANY INTERNAL SYSTEM - INSTALLATION GUIDE
+
 
 Project Type: C# WinForms Application  
 Purpose: Internal system for managing toy company operations  
 Repository: https://github.com/Bill-Yeung/ITP4915M-System-dev-project
 
------------------------------------------------------------
-PREREQUISITES
------------------------------------------------------------
+
+## PREREQUISITES
 
 1. Install XAMPP
    - Download from: https://www.apachefriends.org/index.html
@@ -25,9 +23,7 @@ PREREQUISITES
    - Download from: https://code.visualstudio.com/
    - Install C# extension (powered by OmniSharp)
 
------------------------------------------------------------
-RUNNING THE APPLICATION
------------------------------------------------------------
+## RUNNING THE APPLICATION
 
 1. Open the solution file:
    - `IntegratedSystem_1A_Group_1.sln` located in the root folder
@@ -38,9 +34,7 @@ RUNNING THE APPLICATION
 
 3. Use the WinForms interface to interact with the system
 
------------------------------------------------------------
-TEST CUSTOMER ACCOUNTS
------------------------------------------------------------
+## TEST CUSTOMER ACCOUNTS
 
 Use the following test accounts to log in:
 
@@ -57,15 +51,10 @@ Use the following test accounts to log in:
 | C00009      | Ian Malcolm      | ian@example.com        | ian@example.com           |
 | C00010      | Julia Roberts    | julia@example.com      | julia@example.com         |
 
-🔐 Passwords are stored as SHA-256 hashes in the database, but for testing, use the email address as the password.
+Passwords are stored as SHA-256 hashes in the database, but for testing, use the email address as the password.
 
------------------------------------------------------------
-NOTES
------------------------------------------------------------
+## NOTES
 
 - This system is intended for internal use only.
 - Ensure your MySQL server is running before launching the application.
 - For troubleshooting, check the `Server` project logs and connection strings.
-Bill Yeung via GitHub Issues or project repository
-
-===========================================================
